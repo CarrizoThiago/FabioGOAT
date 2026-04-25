@@ -19,3 +19,17 @@ boton.addEventListener("click", function() {
     document.getElementById("eje2").innerHTML = "<div class='resulfacha'><p>El dia de la semana correspondiente es: " + dias[pedido] + "</p></div>";
 })
 }catch(error){}
+//------------------------------------------------------------------------------------------------------------------------------------
+try{
+    const formulario = document.getElementById("formulario");
+
+    formulario.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let personas = [];
+        for (let i = 1; i <= 6; i++) {
+            personas.push(document.querySelector(`[name="per${i}"]`).value);
+        }
+        console.log(personas);
+        document.getElementById("msj").innerHTML = "<div class='resulfacha'><p>Las personas ingresadas son: " + personas + "</p></div>";
+    });
+}catch(error){}

@@ -32,3 +32,13 @@
     align-items: center;
     padding: 1em;
 }
+.formu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: crimson;
+}
+.fila{
+    padding-top: 2em;
+}
