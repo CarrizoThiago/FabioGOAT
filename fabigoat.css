@@ -24,3 +24,11 @@
     border: 1px;
     border-style: solid;
 }
+.botonson{
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
